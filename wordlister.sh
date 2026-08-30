@@ -31,12 +31,12 @@ done
 
 if [[ $# -lt 1 ]]; then
     echo "Usage: $0 <input_file> [output_file]"
-    echo "Example: $0 source.js params.txt"
+    echo "Example: $0 source.js wordlist.txt"
     exit 1
 fi
 
 INPUT_FILE="$1"
-OUTPUT_FILE="${2:-filtered_parameters.txt}"
+OUTPUT_FILE="${2:-filtered_words.txt}"
 
 
 if [[ ! -f "$INPUT_FILE" ]] || [[ ! -r "$INPUT_FILE" ]]; then
